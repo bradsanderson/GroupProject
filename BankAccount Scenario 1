@@ -1,11 +1,25 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
-public class BankAccEx {
-	
+public class BankAccEx extends Atm {
+
 	public static void main(String[] args) {
+	
+		HashMap<String,String> atms = new HashMap<String,String>();
+		atms.put("Athens", "30601");
+		atms.put("Suwanee", "30024");
+		atms.put("Cumming", "30041");
+		atms.put("Alpharetta", "30005");
+		atms.put("Atlanta", "30301");
 		
+		System.out.println("Locations below have available ATMS: ");
+		System.out.println(atms);
+		System.out.println();
+		
+
 		
 		Account anderson = new Account("Brad Anderson", "1111");
+		
 		
 		System.out.println("Welcome, please insert card.");
 		System.out.println();
@@ -22,7 +36,7 @@ public class BankAccEx {
 		
 		if(selection == 1) //SHOW ACCOUNT INFO
 		{
-		   anderson.printAcc(); 
+		   anderson.print(); 
 		}
 		if(selection == 2) //DEPOSIT
 		{
