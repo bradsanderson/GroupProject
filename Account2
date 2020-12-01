@@ -4,9 +4,20 @@ import java.util.Scanner;
 public class BankAccEx {
 
 	public static void main(String[] args) {
-		System.out.println("Which ATM are you using?");
 		Scanner scnr = new Scanner(System.in);
 		
+		
+		HashMap<String,String> atms = new HashMap<String,String>();
+		atms.put("Athens", "30601");
+		atms.put("Suwanee", "30024");
+		atms.put("Alpharetta", "30005");
+		atms.put("Atlanta", "30301");
+		System.out.println("Locations below have available ATMS: ");
+		System.out.println(atms);
+		System.out.println();
+		
+		
+		System.out.println("Which ATM are you using?");
 		int location = scnr.nextInt();
 		int anArray[];
 		anArray = new int[4];
@@ -29,7 +40,6 @@ public class BankAccEx {
 			System.out.println("ATM at Location 4: " + anArray[3]);
 		}
 	
-		
 		
 		Account anderson = new Account("Brad Anderson", "1111");
 		
