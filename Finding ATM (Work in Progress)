@@ -1,10 +1,11 @@
 
-public class ATM extends Account {
+public class Atm extends Account {
 
+	
 	private int numAtms;
 	private String atmLocation;
 	
-	public ATM() { //default
+	public Atm() {
 		numAtms = 5;
 		atmLocation = "Atlanta, GA";
 	}
